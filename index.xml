@@ -9,7 +9,7 @@
       <item ref="ndice" />
     </collection>
     <collection id="all-collections" name="All the collections" />
-    <collection id="all-nltk" name="All packages available on ipm-server gh-pages branch">
+    <collection id="all-ipm" name="All packages available on ipm-server gh-pages branch">
       <item ref="ndice" />
     </collection>
   </collections>
