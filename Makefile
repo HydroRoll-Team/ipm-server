@@ -1,4 +1,4 @@
-PYTHON = python3
+PYTHON = python
 BASEURL = https://raw.githubusercontent.com/HydroRoll-Team/ipm-server/gh-pages/packages
 
 pkg_index:

@@ -68,5 +68,5 @@ write("all-collections", "All the collections", collections_items)
 # Write `collection/all-ipm.xml` and `collection/all.xml` based on all files under /packages
 all_items = [get_id(xml_path)
              for xml_path in glob(f"{ROOT}/packages/**/*.xml")]
-write("all-nltk", "All packages available on ipm-server gh-pages branch", all_items)
+write("all-ipm", "All packages available on ipm-server gh-pages branch", all_items)
 write("all", "All packages", all_items)
