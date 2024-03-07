@@ -1,6 +1,7 @@
 <package id="ndice"
-    name="infini example: ndice"
+    name="infini example: ndice(基础掷骰指令规则包)"
     webpage="https://github.com/HydroRoll-Team/infini/blob/master/tests/examples/ndice/"
     author="苏向夜"
+    license="Apache-2.0"
     unzip="1"
 />
