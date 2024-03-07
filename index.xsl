@@ -16,16 +16,10 @@
                     <xsl:for-each select="//packages/package">
                         <LI><I>
                                 <xsl:value-of select="@name" />
-                            </I> [<xsl:element
-                                name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="@url" />
-                                </xsl:attribute>
-        download </xsl:element> |<xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="@webpage" />
-                                </xsl:attribute>
-        source </xsl:element>] <BR /> id: <tt>
+                            </I> [<a
+                                href="https://ipm.hydroroll.team{substring-after(@url, 'https://raw.githubusercontent.com/HydroRoll-Team/ipm-server/gh-pages')}">
+        download </a> |<a href="{@webpage}">
+                                source </a>] <BR /> id: <tt>
                                 <xsl:value-of select="@id" />
                             </tt>;
         size: <xsl:value-of select="@size" />; author: <xsl:value-of select="@author" />; copyright: <xsl:value-of
