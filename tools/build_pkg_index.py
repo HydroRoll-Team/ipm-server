@@ -160,7 +160,7 @@ def _find_packages(root):
         for filename in files:
             if filename.endswith(".xml"):
                 xmlfilename = os.path.join(dirname, filename)
-                zipfilename = xmlfilename[:-4] + ".zip"
+                zipfilename = xmlfilename[:-4] + ".ipk"
                 try:
                     zf = zipfile.ZipFile(zipfilename)
                 except Exception as e:
@@ -193,7 +193,7 @@ def _find_packages(root):
 
                 yield pkg_xml, zf, relpath
 
-            elif filename.endswith(".zip"):
+            elif filename.endswith(".ipk"):
                 # Warn user in case a .xml does not exist for a .zip
                 resourcename = os.path.splitext(filename)[0]
                 xmlfilename = os.path.join(dirname, resourcename + ".xml")

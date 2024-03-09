@@ -1,0 +1,28 @@
+name: Build Package Index
+
+on:
+  push:
+  branch: gh-pages
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: build pkg Index
+        run: make pkg_index
+
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: gh-pages
+          commit_message: "feat(site): update index for ${{ github.ref_name }} [skip ci]"
