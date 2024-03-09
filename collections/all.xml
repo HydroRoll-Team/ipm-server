@@ -1,3 +1,4 @@
 <collection id="all" name="All packages">
+  <item ref="coc" />
   <item ref="ndice" />
 </collection>
