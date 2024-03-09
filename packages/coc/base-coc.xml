@@ -1,0 +1,7 @@
+<package id="coc"
+    name="infini example: base-coc(基础 COC 规则包)"
+    webpage="https://github.com/HydroRoll-Team/infini/blob/master/tests/examples/base-coc/"
+    author="简律纯"
+    license="Apache-2.0"
+    unzip="1"
+/>
