@@ -66,15 +66,15 @@ def build_index(root, base_url):
         packages/ .................. subdirectory for packages
         collections/ ............... xml files for collections
 
-    For each package, there should be two files: ``package.zip``
+    For each package, there should be two files: ``package.ipk``
     (where *package* is the package name)
-    which contains the package itself as a compressed zip file; and
+    which contains the package itself as a compressed ipk file; and
     ``package.xml``, which is an xml description of the package.  The
-    zipfile ``package.zip`` should expand to a single subdirectory
+    zipfile ``package.ipk`` should expand to a single subdirectory
     named ``package/``.  The base filename ``package`` must match
     the identifier given in the package's xml file.
 
-    For each collection, there should be a single file ``collection.zip``
+    For each collection, there should be a single file ``collection.ipk``
     describing the collection, where *collection* is the name of the collection.
 
     All identifiers (for both packages and collections) must be unique.
@@ -187,7 +187,7 @@ def _find_packages(root):
                     for name in zf.namelist()
                 ):
                     raise ValueError(
-                        "Zipfile %s.zip does not expand to a "
+                        "Zipfile %s.ipk does not expand to a "
                         "single subdirectory %s/" % (uid, uid)
                     )
 
