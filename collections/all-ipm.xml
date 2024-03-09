@@ -1,4 +1,3 @@
 <collection id="all-ipm" name="All packages available on ipm-server gh-pages branch">
-  <item ref="coc" />
   <item ref="ndice" />
 </collection>
