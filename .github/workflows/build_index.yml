@@ -18,10 +18,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: setup git
-        run: |
-          git config --global user.email "bot@hydroroll.team"
-          git config --global user.name "HydroRollBot"
+      # - name: setup git
+      #   run: |
+      #     git config --global user.email "bot@hydroroll.team"
+      #     git config --global user.name "HydroRollBot"
 
       - name: build pkg Index
         run: make pkg_index
@@ -31,3 +31,6 @@ jobs:
         with:
           branch: gh-pages
           commit_message: "feat(site): update index for ${{ github.ref_name }} [skip ci]"
+          commit_user_name: HydroRoll[bot] # defaults to "github-actions[bot]"
+          commit_user_email: bot@hydroroll.team # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: HydroRoll[bot] <bot@hydroroll.team> # defaults to author of the commit that triggered the run
