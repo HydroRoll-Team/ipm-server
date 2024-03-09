@@ -2,14 +2,17 @@
 <?xml-stylesheet href="index.xsl" type="text/xsl"?>
 <ipm_package_data>
   <packages>
+    <package id="coc" name="infini example: base-coc(&#22522;&#30784; COC &#35268;&#21017;&#21253;)" webpage="https://github.com/HydroRoll-Team/infini/blob/master/tests/examples/base-coc/" author="&#31616;&#24459;&#32431;" license="Apache-2.0" unzip="1" unzipped_size="15007" size="4657" checksum="3b22fee264f03e1f35e3e858892b2db6" subdir="coc" url="https://raw.githubusercontent.com/HydroRoll-Team/ipm-server/gh-pages/packages/coc/coc.ipk" />
     <package id="ndice" name="infini example: ndice(&#22522;&#30784;&#25527;&#39600;&#25351;&#20196;&#35268;&#21017;&#21253;)" webpage="https://github.com/HydroRoll-Team/infini/blob/master/tests/examples/ndice/" author="&#33487;&#21521;&#22812;" license="Apache-2.0" unzip="1" unzipped_size="15007" size="4677" checksum="ae0f41bc75a7053fe59bf9366a12a2cc" subdir="dnd" url="https://raw.githubusercontent.com/HydroRoll-Team/ipm-server/gh-pages/packages/dnd/ndice.ipk" />
   </packages>
   <collections>
     <collection id="all" name="All packages">
+      <item ref="coc" />
       <item ref="ndice" />
     </collection>
     <collection id="all-collections" name="All the collections" />
     <collection id="all-ipm" name="All packages available on ipm-server gh-pages branch">
+      <item ref="coc" />
       <item ref="ndice" />
     </collection>
   </collections>
