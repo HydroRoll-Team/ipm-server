@@ -2,7 +2,8 @@ name: Build Package Index
 
 on:
   push:
-  branch: gh-pages
+    branches:
+      - gh-pages
   workflow_dispatch:
   pull_request:
 
