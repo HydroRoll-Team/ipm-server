@@ -1,7 +1,0 @@
-<package id="coc"
-    name="infini example: coc(基础掷骰指令规则包)"
-    webpage="https://github.com/HydroRoll-Team/infini/blob/master/tests/examples/coc/"
-    author="简律纯"
-    license="Apache-2.0"
-    unzip="1"
-/>
